@@ -1,0 +1,219 @@
+<?php
+	include_once 'Db.php';
+	$mid=$_POST['mid'];
+	//$cdt=$cdt
+	if($_POST['find'])
+	{
+		?>
+		<script>
+			alert($mid);
+		</script>
+		<?php
+	}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link href="new.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+function numb()
+{
+	var x=document.getElementById(mem);
+	if(isNaN(x))
+	{
+		alert("Enter valid phone number");
+		return false;
+	}
+}
+</script>
+</head>
+
+<body>
+<h1 style="color:#00CCFF;" align="center"><u>Attendance Sheet</u></h1>
+<form action="attendance.php" name="vldall" onsubmit="return numb()">
+<table border="0px" width="100%" class="pt">
+<tr>
+<td width="40%" valign="top" colspan="2">
+<fieldset class="fld">
+<legend class="lgd">Attendance</legend>
+<table border="0px" width="100%">
+<tr>
+<td width="35%">
+<input type="text" placeholder ="Enter membership number" id="mem" class="mid" />
+</td>
+<td width="100px">
+<input type="submit" value="Enter"  id="si" class="btn1" onclick="numb"/>
+</td>
+<td class="txta1">
+<label>From</label>
+<input type="date" placeholder=""  id="fdt" class="txta1"/>
+</td>
+<td class="txta1"><lable> To</label>
+<input type="date" placeholder=""  id="tdt" class="txta1" />
+</td>
+<td class="txta1">
+<input type="text" placeholder="Enter the name" id="snm" class="txta1"/>
+</td>
+<td>
+<input type="text" placeholder="Enter phone number" id="pno" class="txta1"/>
+</td>
+</tr>
+</table>
+</fieldset>
+</td>
+</tr>
+<tr>
+<td width="70%" valign="top">
+<fieldset class="fld">
+<legend class="lgd">Sheet</legend>
+<table border="0px" width="100%" class="csr" >
+<tr >
+<td colspan="4">
+<table width="100%" border="0px">
+<tr>
+<td>
+<input type="text" placeholder="Enter membership no" id="fnd" class="fn" />
+</td>
+<td colspan="0" align="left">
+<input type="button" class="btn1" value="Find" name="find" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<table width="100%" border="0px">
+<th width="12%" align="left">Sl No.</th>
+<th width="17%" align="left">Memb No.</th>
+<th align="left">Name</th>
+<th align="left">Phone no</th>
+<tr>
+<td><label>
+05</label>
+</td>
+<td>
+<label>
+B193</label>
+</td>
+<td class="nm">
+<label>
+A.venketes Achary</label>
+</td>
+<td><label>
+8455841188</label>
+</td>
+</tr>
+</table>
+</fieldset>
+</td>
+<td>
+<table border="0px" width="100%">
+<tr><td>
+<fieldset class="fld">
+<legend class="lgd">Ditails</legend>
+<table border="0px" cellpadding="5px" width="100%">
+<tr class="dtl">
+<td width="30%"><label>Name :</label>
+</td>
+<td><label>&nbsp;
+</label>
+</td>
+</tr>
+<tr class="dtl">
+<td>
+<label>
+Membership No :
+</label>
+<td>
+<label></label>
+</td>
+</tr>
+<tr class="dtl">
+<td>
+<label>Address :</label>
+</td>
+<td><label>
+</label></td>
+</tr>
+<tr class="dtl">
+<td>
+<label>
+Phone no:
+</label>
+</td>
+<td>
+<label></label>
+</td>
+</tr>
+<tr class="dtl">
+<td>
+<label>Branch :</label>
+</td>
+<td>
+<label></label>
+</td>
+</tr>
+</table>
+</fieldset>
+</td>
+</tr>
+<tr>
+<td>
+<fieldset class="fld">
+<legend class="lgd">Payment Ditails</legend>
+<table border="0px" cellpadding="5px" width="100%">
+<tr class="dtl">
+<td><label>Name :</label>
+</td>
+<td><label>&nbsp;
+</label>
+</td>
+</tr>
+<tr class="dtl">
+<td>
+<label>
+Paid
+</label>
+<td>
+<label></label>
+</td>
+</tr>
+<tr class="dtl">
+<td>
+<label> </label>
+</td>
+<td><label>
+</label></td>
+</tr>
+<tr class="dtl">
+<td>
+<label>
+</label>
+</td>
+<td>
+<label></label>
+</td>
+</tr>
+<tr class="dtl">
+<td>
+<label></label>
+</td>
+<td>
+<label></label>
+</td>
+</tr>
+</table>
+</fieldset>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<marquee direction="right" behavior="alternate" scrollamount="07" class="mrq">Your Payment Date is 15/05/2016</marquee>
+</form>
+</body>
+</html>

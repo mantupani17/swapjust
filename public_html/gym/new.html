@@ -1,0 +1,90 @@
+<!--select count(*),mid from att_tab group by mid ;
+select count(*),att_tab.mid,reg_tab.cname from att_tab,reg_tab where reg_tab.mid=att_tab.mid group by att_tab.mid ;
+select cname from reg_tab where mid="A908";
+select * from att_tab where mid="a908"; 
+select count(*) from att_tab where mid="a908"; -->
+<html>
+<head>
+<script lang="javascript">
+function checkLeap(yr)
+{
+	if(yr%4==0)
+	{
+	//alert ("Leap Year");
+	return true;
+	}
+	else
+	{
+	//alert("Not A Leap Year");
+	return false;
+	}
+}
+function checkPaid()
+    {
+        var cdt=document.getElementById("dt1").value;
+		var darr=new Array();
+		darr=cdt.split("-");
+		//alert(darr);
+		var cdd=parseInt(darr[2]);
+		var cmm=parseInt(darr[1]);
+		var cyy=parseInt(darr[0]);
+		var mbas=document.getElementById("mbas").value;
+		//alert(mbas);
+       var ddd=0;
+       var mmm=0;
+       var yyy=0; 
+        /*try{
+            ResultSet rs2=con.createStatement().executeQuery("select * from Member_tab where Mid='"+mid+"'");
+            if(rs2.next())
+            {
+                mbas=rs2.getString("pbasis");
+                edt=rs2.getDate("lpaid").toString();
+                mname=rs2.getString("Mname");
+                
+            }*/
+			 
+            
+         if(mbas=="Yearly (372 Days)")
+            {
+                ddd=(cdd+372)%30;
+                if(ddd>=20)
+                    {
+                        ddd=(cdd+372)%30;
+                        mmm=cmm+1;
+                        yyy=cyy+1;
+                    }
+                else
+                {
+                   ddd=(cdd+372)%30;
+                    mmm=cmm;
+                    yyy=cyy+1;
+                }
+				if(ddd>=10 && mmm>=10)
+					document.getElementById("dt2").value= yyy+'-'+mmm+'-'+ddd;
+					else if(ddd>=10)
+					document.getElementById("dt2").value= yyy+'-0'+mmm+'-'+ddd;
+					else if(mmm>=10)
+					document.getElementById("dt2").value= yyy+'-'+mmm+'-0'+ddd;
+					else
+					document.getElementById("dt2").value= yyy+'-0'+mmm+'-0'+ddd;
+               
+            }
+           
+        }
+    
+	</script>
+	</head>
+	<body>
+	<select id="mbas" style="width:88%;">
+			<option selected>Monthly(32 days)</option>
+			<option>Quarterly(93 days)</option>
+			<option>Half yearly(186 days)</option>
+			<option>Yearly(372 days)</option>
+			<option>Premium</option>
+			<option>Others</option>
+			</select>
+	<input type="date" name="date1" id="dt1" />
+	<button type="submit" name="bt1" id="bt2" onclick="checkPaid()">Check</button>
+	<input type="date" name="date2" id="dt2" />
+	</body>
+	</html>

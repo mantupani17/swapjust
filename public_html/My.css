@@ -1,0 +1,66 @@
+.head{
+	font-family:arial;
+	font-size:25px;
+	color:Red;
+	background-color:gray;
+	text-align:center;
+}
+.menu{
+	float:left;
+	background-color:red;
+	color:white;
+	font-family:celibre;
+	font-size:20px;
+	text-align:center;
+	width:auto;
+	height:auto;
+	margin:8px 8px;
+}
+.menu a{
+	text-decoration:none;
+	color:white;
+}
+table{
+	border:0px;
+	color:black;
+	background-color:yellow;
+	width:100%;
+	text-align:right;
+	border-radius:4px 4px;
+}
+
+input,textarea,select,option{
+	border-radius:4px 4px;
+	width:100%;
+}
+.det{
+	width:100%;
+	height:auto;
+	margin-top:5px;
+	background-color:#8a2be2;
+}
+.box3{
+	width:100%;
+	height:40px;
+	margin-top:5px;
+	background-color:red;
+}
+.box1{
+	width:50%;
+	height:20%;
+	background-color:blue;
+	float:left;
+	color:white;
+	margin-top:25%;
+	margin-left:25%;
+}
+.box2{
+	width:38%;
+	height:auto;
+	background-color:gray;
+	float:right;
+	margin-left:2px;
+}
+.corners{
+	border-radius :4px;
+}

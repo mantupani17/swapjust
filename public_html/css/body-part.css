@@ -1,0 +1,28 @@
+.body-part-container{
+	width:100%;
+	height:auto;
+	background-color:white;
+}
+.body-part-container ul{
+	list-style:none;
+}
+.body-part-container li{
+	text-decoration:none;
+	display:inline-block;
+}
+.top_mar{
+	padding:3% 0;
+	width: 89%;
+	margin: 0 auto;
+	
+}
+.row {
+  margin-right: -15px;
+  margin-left: 15px;
+}
+.top_mar li{
+	list-style:none;
+}
+.top_mar li{
+	float:left;
+}

@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Classes</title>
+<link href='homepage.css'  rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="menu" id="menu-bar">
+	<table border="0px" width="100%" style="margin-left:2px;" height="100%">
+	<tr><td width="20%"><img src="Untitled-1 copy.jpg" /></td>
+	<td width="80%">
+		<ul style="margin-left:10px;">
+			<li class="active"><a href="homepage.php" >Home</a></li>
+			<li><a href="" >About</a></li>
+			<li><a href="" >Trainers</a></li>
+			<li><a href="" >Classes</a></li>
+			<li><a href="" >Gyms</a></li>
+			<li><a href="" >Prices</a></li>
+			<li><a href="galary.php" >Gallery</a></li>
+			<li><div class="bo"> 
+		
+<form class="for cf">
+<input type="text" placeholder="search here" required>
+<button type="submit" />search</button>
+</form>
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

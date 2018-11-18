@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Home page</title>
+<link href='homepage.css'  rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="menu" id="menu-bar">
+	<table border="0px" width="100%" style="margin-left:2px;" height="100%">
+	<tr><td width="20%"><img src="Untitled-1 copy.jpg" /></td>
+	<td width="80%">
+		<ul style="margin-left:10px;">
+			<li class="active"><a href="homepage.php" >Home</a></li>
+			<li><a href="" >About</a></li>
+			<li><a href="" >Trainers</a></li>
+			<li><a href="" >Classes</a></li>
+			<li><a href="" >Gyms</a></li>
+			<li><a href="" >Prices</a></li>
+			<li><a href="galary.php" >Gallery</a></li>
+			<li><div class="bo"> 
+		
+<form class="for cf">
+<input type="text" placeholder="search here" required>
+<button type="submit" />search</button>
+</form>
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<?php
+include_once "db.php";
+?>
+
+</table>
+</div>
+<div class="txt">Health iz wealth</div>
+<div class="txt1">gyming is the best way to stay fit</div>
+<div style="font-size:24px; color:#CCCCCC">" U fit life Hit "</div>
+<table border="0px" width="100%">
+<tr>
+<td width="70%">&nbsp;</td>
+
+		<td width="30%" align="center">
+		<p class="ne" align="center">News feed</p>
+				<div class="newFeed">
+				<ol>
+				<?php 
+				$sql="SELECT * FROM news"; 
+				$result_set=mysql_query($sql); 
+				while($row=mysql_fetch_array($result_set)) 
+				{ 
+					?>
+					<li class="lh"><a href="#"><?php echo $row['news']; ?></a></li>
+					<?php
+				}
+				?>
+				
+				</ol>
+				</div>
+		</td>	   
+</tr>
+</table>
+<div>
+<h2 class="gala"><a href="galary.php" class="gala">Gallery</a></h2>
+<table border="0px"  height="530px" width="100%">
+<tr >
+<td width="60%">
+<table border="0px" width="100%">
+<tr>
+	<td><div class="gal dekhiba_fst">	  <img src="20150224_215125.jpg" class="" alt=""/></div></td>
+	<td><div class="gal dekhiba_fst">     <img src="20150224_223017.jpg" class="" alt=""/></div></td>
+</tr>
+<tr>
+	<td> <div class="gal dekhiba_fst">	   <img src="20150224_223021.jpg" class="" alt=""/></div></td>
+	<td> <div class="gal dekhiba_fst">	   <img src="20150217_191704.jpg" class="" alt=""/></div></td>
+</tr>
+</table>
+</td>
+	<td width="40%" rowspan="2" height="100%">
+	<div  class="feedBacck"><h2 align="center">feedback</h2><br>
+	<form action="test.php" method="POST" name="feedback">
+	<span style="margin-left:7%; margin-right:7px;"> Full Name
+	</span><input type="text" value="Name" class="inp" name="fname" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
+	</br></br>
+	<span style="margin-left:7%; margin-right:15px;"> Email id</span>
+	<input type="text" value="emali @" class="inp" name="mid" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'email@';}"><br><br>
+	<span style="margin-left:7%; margin-right:15px;"> Subject</span>
+	<input type="text" value="Subject" name="subject" class="inp" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Subject';}"><br><br>
+	<textarea value="Query" class="impTxt" name="query" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Query';}">Query</textarea>
+	<br><br>
+	<input type="submit" value="Drope Your Query" class="impBTn" name="submit" alt="feedback" />
+	
+		</form>
+	</div></td>
+	</tr>
+</table>
+</div>
+<table border="0px" width="100%"><tr><td>
+<div class="jws">
+<p><i>Join With Us <br>Start a Blue Revolution Save Water...!!!!</i></p>
+</div>
+</td>
+<td>
+<img src="be.jpg">
+</td>
+</tr>
+</table>
+<div class="ftr">
+<h2 align="center" class="hnds">Handshake YOU</h2><br>
+<table border="0px" width="100%">
+<tr>
+<td rowspan="2">
+<p class="sus"><b>Founder</b></p>
+<div class="an">
+<p class="alt">Susanta Madala</p>
+<p class="alt">mail id : susanta@gmail.com</p>
+<p class="alt">Berhampur</p></div>
+</td>
+<td rowspan="2">
+<p class="sus"><b>Developer</b></p>
+<div class="an">
+<p class="alt">A.Venketes Achary(Frontend Designer)</p>
+<p class="alt">Mantu Pani(Backend Designer)</p>
+<p class="alt">Om Shankar(Graphic Designer)</p>
+<p class="alt">Pabitra kumar Jena(Image Editor)</p></div>
+</td>
+<td rowspan="2">
+<p class="sus"><b>Menu</b></p>
+<div class="an">
+<p class="alt"><a class="fsa" href="reggym.html">Gym Register</a></p>
+<p class="alt"><a class="fsa" href="sginupmemb.html"> Member Register</a></p>
+<p class="alt"><a class=" fsa" href="galary.php">Galary</a></p>
+<p class="alt">&copy;opy rights reserved by www.handshakeyou.com</p></div>
+</td>
+<td>
+<p class="icn">Follow us on <a href="www.facebook.com/handshakyou"><img src="imgicon.jpg"></a></p>
+</td>
+</tr>
+<tr>
+<td><p class="icn">Follow us on <img src="twt.jpg"></p></td>
+</tr>
+</table>
+</div>
+
+	</body>
+</html>

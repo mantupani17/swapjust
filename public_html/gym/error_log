@@ -1,0 +1,4 @@
+[14-Mar-2017 14:36:13 America/Chicago] PHP Warning:  include_once(db.php): failed to open stream: No such file or directory in /home/handshakeyou/public_html/gym/setin.php on line 3
+[14-Mar-2017 14:36:13 America/Chicago] PHP Warning:  include_once(): Failed opening 'db.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/handshakeyou/public_html/gym/setin.php on line 3
+[18-Mar-2017 10:00:23 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/handshakeyou/public_html/gym/Db.php on line 6
+[18-Mar-2017 10:31:17 America/Chicago] PHP Parse error:  syntax error, unexpected '$life' (T_VARIABLE) in /home/handshakeyou/public_html/gym/Admin.php on line 1

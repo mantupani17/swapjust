@@ -1,0 +1,16 @@
+.detail{
+	font-size:12px;
+	border-radius :4px;
+}
+.corners{
+	border-radius :4px;
+}
+.lbt
+{
+border-radius:10px;
+background:#00CCFF;
+color:#fff;
+margin-top:15px;
+width:105px;
+cursor:pointer;
+}

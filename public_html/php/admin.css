@@ -1,0 +1,28 @@
+.menu-bar{
+	width:100%;
+	height:auto;
+	background-color:#f0ffff;
+	color:blue;
+	text-align:center;
+	font-size:20px;
+}
+
+.left-bar{
+	width:30%;
+	height:auto;
+	background-color:#f0ffff;
+	color:blue;
+}
+.right-side{
+	width:70%;
+	height:auto;
+	background-color:#f0ffff;
+	color:blue;
+	float:right;
+}
+a{
+	text-decoration:none;
+}
+label{
+	margin-top:30%;
+}

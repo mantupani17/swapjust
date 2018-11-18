@@ -1,0 +1,251 @@
+/* CSS Document */
+.a{
+#top:250px;
+box-shadow: 0px 0px 5px 3px #999999;
+margin-top:250px;
+border:none;
+}
+.tx1{
+width:300px;
+height:30px;
+margin:10px;
+}
+.lbt
+{
+border-radius:10px;
+background:#00CCFF;
+color:#fff;
+margin-top:15px;
+width:105px;
+cursor:pointer;
+}
+/* for attend form*/
+.fld{
+border-color:#330066;
+}
+.lgd{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color:#00CCFF;
+}
+.txta
+{
+width:98%;
+border-radius:2px;
+color:#330066;
+outline:none;
+border-color:#6633CC;
+height:25px;
+transition: border-color 0.4s;
+	-o-transition: border-color 0.4s;
+	-ms-transition: border-color 0.4s;
+	-moz-transition: border-color 0.4s;
+	-webkit-transition: border-color 0.4s;
+	border:1px solid;
+}
+.btn1
+{
+background:#330066;
+width:100%;
+color:#fff;
+height:30px;
+border-radius:7px;
+}
+.nm
+{
+}
+/*.pt
+{
+height:650px;
+}*/
+.divl
+{
+margin-top:5px;
+}
+.dtl
+{
+color:#330066;
+width:20%;
+}
+.csr{
+cursor:pointer;
+}
+.txta1
+{
+border-color:#6633cc;
+height:20px;
+color:#330066;
+outline:none;
+transition: border-color 0.4s;
+	-o-transition: border-color 0.4s;
+	-ms-transition: border-color 0.4s;
+	-moz-transition: border-color 0.4s;
+	-webkit-transition: border-color 0.4s;
+		border:1px solid;
+
+}
+.mrq
+{
+background:#FFF;
+color:#ff0000;
+font-size:25px;
+}
+.fn
+{
+width:95%;
+border-color:#330066;
+color:#330066;
+outline:none;
+transition: border-color 0.4s;
+	-o-transition: border-color 0.4s;
+	-ms-transition: border-color 0.4s;
+	-moz-transition: border-color 0.4s;
+	-webkit-transition: border-color 0.4s;
+		border:1px solid;
+height:25px;
+}
+.txtpay
+{
+padding: 1em 1em;
+	color:#999;
+	width: 100%;
+	border: 1px solid;
+	outline: none;
+	transition: border-color 0.4s;
+	-o-transition: border-color 0.4s;
+	-ms-transition: border-color 0.4s;
+	-moz-transition: border-color 0.4s;
+	-webkit-transition: border-color 0.4s;
+	border-color: #ddd;
+	font-size: 0.85em;
+}
+.txtpy
+{
+
+}
+label
+{
+color:#330066;
+font-size:17px;
+}
+.txtpay:hover
+{
+border-color:#0099cc;
+}
+.btx
+{
+	  display:block;
+	  width:80%;
+	  font-size:0.85em;
+	  text-align:center;
+	  text-decoration:none;
+	  margin:0 auto;
+	  outline: 0;
+	 -webkit-transition: all 0.5s ease-in-out;
+	 -moz-transition: all 0.5s ease-in-out;
+	 -o-transition: all 0.7s ease-in-out;
+	 transition: all 0.7s ease-in-out;
+	  padding:8px 10px;
+     -moz-border-radius:1px; 
+	 -webkit-border-radius:1px; 
+	 border-radius:1px;
+	 border:none;
+     cursor:pointer;
+    background:#0099ff;
+	color:#ffffff;
+}
+.okb{
+	 display:block;
+	  width:10%;
+	  font-size:0.7em;
+	  text-align:center;
+	  text-decoration:none;
+	  margin:0 auto;
+	  outline: 0;
+	 -webkit-transition: all 0.5s ease-in-out;
+	 -moz-transition: all 0.5s ease-in-out;
+	 -o-transition: all 0.7s ease-in-out;
+	 transition: all 0.7s ease-in-out;
+	  padding:8px 10px;
+     -moz-border-radius:1px; 
+	 -webkit-border-radius:1px; 
+	 border-radius:1px;
+	 border:none;
+     cursor:pointer;
+    background:#0099ff;
+	color:#ffffff;
+}
+.okb:hover
+{
+	  display:block;
+	  width:10%;
+	  font-size:0.85em;
+	  text-align:center;
+	  text-decoration:none;
+	 # margin:0 auto;
+	  outline: 0;
+	 -webkit-transition: all 0.3s ease-in-out;
+	 -moz-transition: all 0.3s ease-in-out;
+	 -o-transition: all 0.3s ease-in-out;
+	 transition: all 0.3s ease-in-out;
+	  padding:8px 10px;
+     -moz-border-radius:1px; 
+	 -webkit-border-radius:1px; 
+	 border-radius:1px;
+	 border:none;
+     cursor:pointer;
+    background:#3300CC;
+	color:#ffffff;
+}
+.btx:hover
+{
+	  display:block;
+	  width:80%;
+	  font-size:0.85em;
+	  text-align:center;
+	  text-decoration:none;
+	  margin:0 auto;
+	  outline: 0;
+	 -webkit-transition: all 0.3s ease-in-out;
+	 -moz-transition: all 0.3s ease-in-out;
+	 -o-transition: all 0.3s ease-in-out;
+	 transition: all 0.3s ease-in-out;
+	  padding:8px 10px;
+     -moz-border-radius:1px; 
+	 -webkit-border-radius:1px; 
+	 border-radius:1px;
+	 border:none;
+     cursor:pointer;
+    background:#3300CC;
+	color:#ffffff;
+}
+.fnt{
+	font-size:16px;
+	font-family:arial;
+	color:blue;
+	font-style:oblique;
+	font-weight:bold;
+	text-transform:capitalize;
+}
+.hfnt{
+	font-size:15px;
+	font-family:arial;
+	color:blue;
+	font-style:oblique;
+	font-weight:bold;
+	text-transform:capitalize;
+}
+a{
+	text-decoration:none;
+	text-align:center;
+	color:red;
+}
+.dx
+{
+background-color:#33ccff;
+color:#fff;
+}
+.dx :hover
+{
+background-color:#fff;
+color:#eee;
+}

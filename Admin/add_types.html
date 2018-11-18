@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add new Product</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap-3.3.7\dist\js\bootstrap.min.js" ></script>
+        <link rel="shortcut icon" href="../PHP/logo/logo.jpg" />
+<link rel="stylesheet" href="../w3css/w3css.css" />
+<link rel="stylesheet" href="bootstrap-3.3.7\dist\css\bootstrap.min.css" />
+<link rel="stylesheet" href="icons/font-awesome-4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+      .w3-allerta {
+  font-family: "Allerta Stencil", Sans-serif;
+}
+</style>
+<script type="text/javascript" lang="javascript">
+   
+    $(document).ready(function(){
+         $("#helpdesk").hide();
+    $("#bt").click(function(){
+        $("#helpdesk").toggle();
+    });
+    });
+    </script>
+    </head>
+    <body>
+        <div class="w3-bar w3-black">
+            <div class="w3-bar-item w3-allerta w3-xlarge">Product Entry Page</div>
+        </div><br/>
+        <div class="w3-large w3-black" style="margin-left: 0">Type Entry</div>
+        <form action="add_new_type.php" method="POST">
+        <table border="0px" align="center">
+            <tr>
+                <td>Select Type Data :</td>
+                <td>
+                    <select name="type_data" class="w3-select">
+                        <option>Company name</option>
+                        <option>Color</option>
+                        <option>Flavor</option>
+                        <option>Product Name</option>
+                        <option>Product Type</option>
+                        <option>Product For</option>
+                        <option>Where Need</option>
+                        <option>Product Category</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Type value:</td>
+                <td><input type="text" name="type_value" placeholder="Type a value"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input class="w3-button w3-red w3-hover-purple" type="submit" name="addnew" value="Add"/><a href="new_product_entry.php" class="w3-button w3-blue w3-hover-pale-red">Add new Product</a></td>
+            </tr>
+        </table>
+            <strong>
+                **** this informs to you that you add any type of data with value for dynamic configuration of the system ****
+                <a href="#" id="bt">More...</a>
+            </strong>
+            <p>
+            <table class="w3-table w3-pink" id="helpdesk">
+                <tr>
+                    <td>Company name :</td><td>this field is for if new company will came to the market.</td>
+                </tr>
+                <tr>
+                    <td>Color :</td><td>this field is for if new Color will came to the market.</td>
+                </tr>
+                <tr>
+                    <td>Flavor :</td><td>this field is for if new Flavor will came to the market.</td>
+                </tr>
+                <tr>
+                    <td>Product For:</td><td>this field is for if new type of people came as for the product need.</td>
+                </tr>
+                <tr>
+                    <td>Product Type:</td><td>this field is for if new type of product(powder,caps,etc) came to the market.</td>
+                </tr>
+                <tr>
+                    <td>Where it need :</td><td>why the product is needed for the customer(mass gain,lose,etc.).</td>
+                </tr>
+                <tr>
+                    <td>Product name:</td><td>this field is for if new Product will came to the market.</td>
+                </tr>
+                <tr>
+                    <td>Product Category:</td><td>this field is for if new type(shopping,nutrition,grocery,flower..etc) will came to the market.</td>
+                </tr>
+            </table>
+            </p>
+        </form>
+    </body>
+</html>
